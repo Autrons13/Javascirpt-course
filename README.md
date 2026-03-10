@@ -1,2 +1,2 @@
 # Javascirpt-course
-Berisi hasil tugas dari course javascript
+Berisi hasil tugas dari course javascript MSIB
