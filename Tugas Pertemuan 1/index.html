@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas1</title>
+  </head>
+  <body>
+    <h1>Hasil Perhitungan :</h1>
+    <h3>Nama : Muhammad Fikri Arrayan</h3>
+    <hr />
+    <div id="output"></div>
+
+    <script>
+      /**
+         Persegi Panjang */
+      function HitungLuasPersegiPanjang(panjang, lebar) {
+        let luas = panjang * lebar;
+        return luas;
+      }
+
+      /**
+       * Bujur Sangkar */
+      function HitungLuasBujurSangkar(sisi) {
+        let luas = sisi * sisi;
+        return luas;
+      }
+      /**
+       * Segitiga */
+      function HitungLuasSegitiga(alas, tinggi) {
+        let luas = alas * tinggi;
+        return luas;
+      }
+
+      /**
+       * variabel nilai */
+      const p = 30,
+        l = 10;
+      const s = 8;
+      const a = 20,
+        t = 10;
+
+      //memanggil fungsi
+      const luasPP = HitungLuasPersegiPanjang(p, l);
+      const luasBS = HitungLuasBujurSangkar(s);
+      const luasSegitiga = HitungLuasSegitiga(a, t);
+
+      // menampilkan hasil di halaman web
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = `
+            <p>1. Luas Persegi Panjang (${p} x ${l}) = <b>${luasPP}</b></p>
+            <p>2. Luas Bujur Sangkar (${s} x ${s}) = <b>${luasBS}</b></p>
+            <p>3. Luas Segitiga (0.5 x ${a} x ${t}) = <b>${luasSegitiga}</b></p>
+        `;
+
+      // menampilkan di console
+      console.log("luas persegi panjang :", luasPP);
+      console.log("luas bujur sangkar :", luasBS);
+      console.log("luas segitiga :", luasSegitiga);
+    </script>
+  </body>
+</html>
