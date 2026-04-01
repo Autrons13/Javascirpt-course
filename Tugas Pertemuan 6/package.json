@@ -1,0 +1,10 @@
+{
+  "name": "tugas-pertemuan-6",
+  "version": "1.0.0",
+  "description": "tugas javascript",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  }
+}
